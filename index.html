@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="java.js"></script>
+    <script src="jquery.js"></script>
+    <script>
+$(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+});
+
+$(function () {
+    $("#go").click(function () {
+        $("#redbox").animate({ "width": "300px", "height": "300px", "background-color": "green" }, 1000);
+        $("#redbox").css({ "background-color": "green", "border": "2px solid red" });
+    });
+});
+
+$(function () {
+    $("#woo").click(function () {
+        $("#gronbox").removeClass("greenbox").addClass("greenboxOrange");
+    });
+});
+  
+    </script>
+
+</head>
+<body>
+    
+
+
+    <div id="login">
+
+        <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+            <div id="return"></div>
+
+            Username: <input type="text" name="fname" />
+
+            Password: <input type="password" />
+
+
+            <input type="submit" value="Sign In">
+
+        </form>
+
+
+
+
+
+    </div>
+
+    <div id="box">
+        <div id="redbox"></div>
+        <button id="go">Go!</button>
+
+        <div id="gronbox" class="greenbox"></div>
+        <button id="woo">woo!</button>
+    </div>
+</body>
+</html>

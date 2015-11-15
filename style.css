@@ -1,0 +1,43 @@
+﻿body {
+    color:black;
+    background-color:ghostwhite;
+
+}
+#login
+{
+    border:5px solid;
+    position:relative;
+    top:150px;
+    left:500px;
+    width:25%;
+   font-size:16px;
+    white-space:pre-wrap;
+}
+#return
+{
+    
+    color:red;
+    padding-left:100px;
+    }
+
+
+#box{
+    margin-top:200px;
+    text-align:center;
+}
+#redbox{
+   width:200px;
+   height:200px;
+   background-color:red;
+    }
+.greenbox{
+   width:200px;
+   height:200px;
+   background-color:green;
+    }
+
+.greenboxOrange{
+   width:400px;
+   height:100px;
+   background-color:orange;
+    }
